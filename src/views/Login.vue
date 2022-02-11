@@ -1,6 +1,8 @@
 <template>
   <div class="login">
-      LOGIN
+    <div class="btn-volver">
+      <router-link to="/"><img src="../assets/img/arrow-left.svg" alt="Volver"></router-link>
+    </div>
   </div>
 </template>
 

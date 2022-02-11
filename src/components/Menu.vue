@@ -1,8 +1,8 @@
 <template>
-  <div class="menu" v-if="showMenu">
-    <div id="nav">
+  <div class="menu">
+    <div id="nav" v-if="showMenu">
       <div>
-        <router-link to="/"><img src="../assets/img/logo.png" alt="Logo"></router-link>
+        <router-link to="/"><img src="../assets/img/fav.png" alt="Logo"></router-link>
       </div>
       <div class="group-items">
         <router-link to="/feed">Feed</router-link>
@@ -24,34 +24,30 @@
 </template>
 
 <script>
-import { watch } from 'vue';
-import { useRoute } from 'vue-router';
 
 export default {
   name: 'Menu',
   data() {
     return {
-      showMenu: true
+      
     }
   },
-  watch: {
-    
-  },
-  setup() {
-    const route = useRoute();
-    watch(() => route.name, () => {
-      if (route.name === 'Login' || route.name === 'Registro') {
-        this.showMenu = false;
+  computed:{
+    showMenu(){
+      var mostrarMenu = true;
+      if (this.$route.name === 'Login' || this.$route.name === 'Registro') {
+        mostrarMenu = false;
       } else {
-        this.showMenu = true;
+        mostrarMenu = true;
       }
-      console.log('Show menu: ' + this.showMenu);
-    }, { immediate: true });
-    
-    return { route };
+      return mostrarMenu;
+    }
+  },
+  mounted() {
+
   },
   methods: {
-    
+
   }
 }
 </script>
