@@ -4,6 +4,7 @@ import Feed from '../views/Feed.vue'
 import Explora from '../views/Explora.vue'
 import Archivo from '../views/Archivo.vue'
 import Blog from '../views/Blog.vue'
+import Notificaciones from '../views/Notificaciones.vue'
 import Login from '../views/Login.vue'
 import Registro from '../views/Registro.vue'
 
@@ -32,6 +33,11 @@ const routes = [
     path: '/blog',
     name: 'Blog',
     component: Blog
+  },
+  {
+    path: '/notificaciones',
+    name: 'Notificaciones',
+    component: Notificaciones
   },
   {
     path: '/login',

@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
+  background-color: #ffffff50;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); 
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
   position: fixed;
@@ -54,4 +55,81 @@
   background-color: #000000;
   color: #ffffff;
   padding: 5px 10px 5px 10px;
+}
+
+.menu .user-items .notification-item {
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  background-color: #eeeeee;
+  background-image: url('../img/notification.svg');
+  background-position: center;
+  background-size: 30px;
+  background-repeat: no-repeat;
+}
+
+.menu .user-items .notification-number {
+  min-width: 20px;
+  height: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 50px;
+  background-color: #c96d6d;
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu .user-items .user-image {
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  background-image: url('../img/user.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.menu .user-items .user-desplegable {
+  position: absolute;
+  margin-top: 280px;
+  margin-right: 20px;
+  display: block !important;
+  background-color: #ffffff50;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); 
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  padding: 10px;
+  -webkit-backdrop-filter: blur(2em);
+  backdrop-filter: blur(2em);
+  text-align: center;
+}
+
+.menu .user-items .user-desplegable .item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu .user-items .user-desplegable div:hover {
+  background-color: #eeeeee;
+  border-radius: 5px;
+}
+
+.menu .user-items .user-desplegable .separador {
+  width: 100%;
+  height: 1px;
+  background-color: #eeeeee;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.menu .user-items .user-desplegable .item.logout {
+  color: #c96d6d;
 }
