@@ -9,11 +9,71 @@
 
 .login .login-box {
     width: 350px;
-    height: 300px;
+    height: 370px;
     margin: 0 auto;
     margin-top: 200px;
     border-radius: 10px;
     background-color: #ffffff;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); 
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.login .login-box .titulo-login {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.login .login-box .subtitulo-login {
+    width: 260px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #7a7a7a;
+}
+
+.login .login-box .input-box {
+    padding: 30px;
+}
+
+.login .login-box .input-box input {
+    width: 220px;
+    margin-bottom: 10px;
+    border: 0px;
+    border-bottom: 1px solid;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.login .login-box .input-box input:focus-visible {
+    outline: 0px;
+}
+
+.login .login-box .btn-login {
+    max-width: 150px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.login .login-box .texto-registro {
+    width: 260px;
+    margin: 0 auto;
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #7a7a7a;
+}
+
+.login .login-box .texto-registro a {
+    color: #7a7a7a;
 }

@@ -25,15 +25,15 @@
           </div>
         </router-link>
         <div class="user-image" @click="toggleUserMenu()"></div>
-        <div class="user-desplegable" v-if="userMenuVisible">
-          <div class="item"><strong>NombreUsuario01</strong></div>
-          <div class="separador"></div>
-          <div class="item">Editar perfil</div>
-          <div class="item">Configuración</div>
-          <div class="separador"></div>
-          <div class="item logout" @click="cerrarSesion()">Cerrar sesión</div>
-        </div>
       </div>
+    </div>
+    <div class="user-desplegable" v-if="userMenuVisible">
+      <div class="item"><strong>NombreUsuario01</strong></div>
+      <div class="separador"></div>
+      <div class="item">Editar perfil</div>
+      <div class="item">Configuración</div>
+      <div class="separador"></div>
+      <div class="item logout" @click="cerrarSesion()">Cerrar sesión</div>
     </div>
     <router-view/>
   </div>
