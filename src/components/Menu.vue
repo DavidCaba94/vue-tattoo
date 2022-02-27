@@ -60,7 +60,10 @@ export default {
     },
     userLogged() {
       var isLogged = false;
-      if (this.$store.state.login.user !== '' && this.$store.state.login.pass !== '') {
+      if (this.$store.state.login.user !== 'null' && 
+          this.$store.state.login.pass !== 'null' && 
+          sessionStorage.getItem('user') !== 'null' && 
+          sessionStorage.getItem('pass') !== 'null') {
         isLogged = true;
       } else {
         isLogged = false;
@@ -78,6 +81,8 @@ export default {
     cerrarSesion() {
       this.toggleUserMenu();
       this.$store.commit('login', {user: '', pass: ''});
+      sessionStorage.setItem('user', 'null');
+      sessionStorage.setItem('pass', 'null');
       this.$router.push('/');
     }
   }

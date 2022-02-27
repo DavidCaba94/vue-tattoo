@@ -8,6 +8,12 @@ export default {
   name: 'App',
   components: {
     Menu
+  },
+  created() {
+    if(sessionStorage.getItem('user') !== 'null' && sessionStorage.getItem('pass') !== 'null') {
+      this.$store.state.login.user = sessionStorage.getItem('user');
+      this.$store.state.login.pass = sessionStorage.getItem('pass');
+    }
   }
 }
 </script>

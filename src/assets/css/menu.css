@@ -63,10 +63,9 @@
   width: 45px;
   height: 45px;
   border-radius: 50px;
-  background-color: #eeeeee;
   background-image: url('../img/icons/notification.svg');
   background-position: center;
-  background-size: 30px;
+  background-size: 25px;
   background-repeat: no-repeat;
 }
 
@@ -77,8 +76,8 @@
   text-align: center;
   justify-content: center;
   flex-wrap: nowrap;
-  margin-top: 30px;
-  margin-left: 30px;
+  margin-top: 25px;
+  margin-left: 25px;
   border-radius: 50px;
   background-color: #c96d6d;
   color: #ffffff;

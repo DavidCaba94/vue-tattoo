@@ -9,13 +9,13 @@
 
 .login .login-box {
     width: 350px;
-    height: 370px;
     margin: 0 auto;
     margin-top: 200px;
     border-radius: 10px;
     background-color: #ffffff;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); 
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    padding: 10px;
 }
 
 .login .login-box .titulo-login {
@@ -69,11 +69,75 @@
     margin: 0 auto;
     font-size: 12px;
     font-weight: 300;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     margin-top: 0;
     color: #7a7a7a;
 }
 
 .login .login-box .texto-registro a {
     color: #7a7a7a;
+}
+
+.login .login-box .error-log {
+    font-size: 12px;
+    color: #ff6d6d;
+    font-weight: 300;
+    margin-top: -20px;
+}
+
+
+/* LOADER */
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 20px;
+}
+.lds-ellipsis div {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(24px, 0);
+    }
 }
